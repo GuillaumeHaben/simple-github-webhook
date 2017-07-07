@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
-# Example of a deployment script
-# You should probably replace this with your very own!
+# Deployment script
 
-cd ..
-
+cd /home/httpdjail/ceten/integration/www
 git pull
-
-npm install
-
-npm start
+forever restartall
 
 exit 0
 
